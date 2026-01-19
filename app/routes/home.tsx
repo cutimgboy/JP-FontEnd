@@ -1,13 +1,2 @@
-import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
-
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
-}
-
-export default function Home() {
-  return <Welcome />;
-}
+// 此文件已废弃，路由已迁移到 routes/home/_layout.tsx
+// 保留此文件以避免路由配置错误，实际路由配置在 routes.ts 中
