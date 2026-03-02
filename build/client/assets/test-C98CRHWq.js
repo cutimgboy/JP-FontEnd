@@ -1,0 +1,1 @@
+import{w as t,p as s}from"./chunk-EPOLDU6W-CbSM6xYT.js";const n=t(function(){return s.jsxs("div",{className:"p-4",children:[s.jsx("h1",{className:"text-2xl font-bold",children:"Test Page Works!"}),s.jsx("p",{children:"If you can see this, basic routing is working."})]})});export{n as default};

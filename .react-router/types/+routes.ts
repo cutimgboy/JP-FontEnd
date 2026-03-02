@@ -14,16 +14,7 @@ type Pages = {
   "/": {
     params: {};
   };
-  "/trading": {
-    params: {};
-  };
-  "/category": {
-    params: {};
-  };
-  "/cart": {
-    params: {};
-  };
-  "/profile": {
+  "/test": {
     params: {};
   };
 };
@@ -31,40 +22,15 @@ type Pages = {
 type RouteFiles = {
   "root.tsx": {
     id: "root";
-    page: "/" | "/trading" | "/category" | "/cart" | "/profile";
+    page: "/" | "/test";
   };
-  "routes/home/_layout.tsx": {
-    id: "routes/home/_layout";
-    page: "/" | "/trading" | "/category" | "/cart" | "/profile";
-  };
-  "routes/home/index.tsx": {
-    id: "routes/home/index";
-    page: "/";
-  };
-  "routes/home/trading.tsx": {
-    id: "routes/home/trading";
-    page: "/trading";
-  };
-  "routes/home/category.tsx": {
-    id: "routes/home/category";
-    page: "/category";
-  };
-  "routes/home/cart.tsx": {
-    id: "routes/home/cart";
-    page: "/cart";
-  };
-  "routes/home/profile.tsx": {
-    id: "routes/home/profile";
-    page: "/profile";
+  "routes/test.tsx": {
+    id: "routes/test";
+    page: "/test";
   };
 };
 
 type RouteModules = {
   "root": typeof import("./app/root.tsx");
-  "routes/home/_layout": typeof import("./app/routes/home/_layout.tsx");
-  "routes/home/index": typeof import("./app/routes/home/index.tsx");
-  "routes/home/trading": typeof import("./app/routes/home/trading.tsx");
-  "routes/home/category": typeof import("./app/routes/home/category.tsx");
-  "routes/home/cart": typeof import("./app/routes/home/cart.tsx");
-  "routes/home/profile": typeof import("./app/routes/home/profile.tsx");
+  "routes/test": typeof import("./app/routes/test.tsx");
 };
